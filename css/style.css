@@ -215,7 +215,7 @@ body {
 }
 
 
-/* --------------------article2-------------------*/
+/* --------------------article__cards-------------------*/
 
 
 /* --------------------cards-------------------*/
@@ -287,5 +287,41 @@ body {
         justify-content: center;
         flex-direction: row;
         /* grid-template-columns: 33.33% 33.33% 33.33%; */
+    }
+}
+
+
+/* --------------------article__prices-------------------*/
+
+.container__prices {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: #0E0E16;
+    color: white;
+}
+
+.price__item {
+    border: 1px solid red;
+}
+
+.price__gallery {
+    display: flex;
+}
+
+.gallery__imgContainer {
+    position: relative;
+}
+
+.gallery__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 760px) {
+    .container__prices {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 }
