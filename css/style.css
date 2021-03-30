@@ -301,11 +301,14 @@ body {
 }
 
 .price__item {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .price__gallery {
     display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
 }
 
 .gallery__imgContainer {
@@ -324,4 +327,31 @@ body {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
+}
+
+.triangle {
+    box-sizing: border-box;
+    display: block;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #0E0E16;
+    width: 25%;
+    height: 100%;
+    transform: skew(-6deg);
+}
+
+.triangle-start {
+    left: -14px;
+}
+
+.triangle-right {
+    left: unset;
+    right: -20px;
+}
+
+.triangle-final {
+    left: unset;
+    right: -40px;
+    width: 30%;
 }
