@@ -71,6 +71,7 @@ body {
     padding-bottom: 10px;
     margin-bottom: 15px;
     border-bottom: 2px solid white;
+    transition: all 0.5s;
 }
 
 .menu__item:first-of-type {
@@ -125,6 +126,7 @@ body {
     .menu__item a {
         padding: 10px;
         border-bottom: 2px solid honeydew;
+        transition: all 0.5s;
     }
     .menu__item a:hover {
         background-color: #316B1A;
@@ -192,6 +194,7 @@ body {
 .fluid__button-a:hover {
     color: green;
     background-color: whitesmoke;
+    transition: all 0.5s;
 }
 
 @media screen and (min-width: 760px) {
@@ -248,6 +251,11 @@ body {
     object-fit: cover;
     -webkit-box-shadow: 4px 4px 20px 5px rgba(0, 0, 0, 0.35);
     box-shadow: 4px 4px 20px 5px rgba(0, 0, 0, 0.35);
+    transition: all 0.8s;
+}
+
+.card__img:hover {
+    transform: scale(1.02);
 }
 
 .card__button {
@@ -259,11 +267,16 @@ body {
     display: block;
     font-size: 22px;
     text-decoration: none;
-    background-color: green;
+    background-color: #008000;
     padding: 20px;
     color: white;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 4px 4px 20px 5px rgba(0, 0, 0, 0);
     box-shadow: 0px 10px 13px -7px #000000, 4px 4px 20px 5px rgba(0, 0, 0, 0);
+    transition: all 0.8s;
+}
+
+.card__button a:hover {
+    background-color: #005000;
 }
 
 @media screen and (min-width: 760px) {
