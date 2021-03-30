@@ -47,7 +47,7 @@ body {
 }
 
 .button__icon {
-    content: url(/src/icons/menu-black-18dp.svg);
+    content: url(src/icons/menu-black-18dp.svg);
 }
 
 
