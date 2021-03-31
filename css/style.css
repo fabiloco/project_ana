@@ -306,10 +306,10 @@ body {
     }
     .container__prices {
         grid-template-rows: 60% 40%;
-        grid-template-columns: 30% 70%;
+        grid-template-columns: 40% 60%;
         margin-left: auto;
         margin-right: auto;
-        width: 95%;
+        width: 86%;
     }
 }
 
@@ -327,20 +327,12 @@ body {
     font-size: 16px;
 }
 
-@media screen and (min-width: 760px) {
-    .price__text {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-        justify-content: space-evenly;
-    }
-}
-
 .price__text h2 {
     text-align: center;
     color: white;
     padding: 0;
     margin: 10px;
-    margin-top: 20px;
+    margin-top: 35px;
 }
 
 .price__text h2 span {
@@ -363,6 +355,27 @@ body {
 .price__text ul {
     padding: 0;
     margin: 5px 32px 15px 32px;
+}
+
+@media screen and (min-width: 760px) {
+    .price__text {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        justify-content: space-evenly;
+    }
+    .price__text h2 {
+        margin-top: 50px;
+        font-size: 36px;
+    }
+    .price__text h2 span {
+        font-size: 50px;
+    }
+    .price {
+        font-size: 50px;
+    }
+    .price__include {
+        font-size: 26px;
+    }
 }
 
 
@@ -435,13 +448,6 @@ body {
     justify-content: space-evenly;
 }
 
-@media screen and (min-width: 760px) {
-    .price__list {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-    }
-}
-
 .price__list p {
     font-size: 24px;
     padding: 0;
@@ -453,6 +459,13 @@ body {
     margin: 0 10px 10px 10px;
 }
 
+@media screen and (min-width: 760px) {
+    .price__list {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+}
+
 
 /* --------------------price__buttons-------------------*/
 
@@ -460,13 +473,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-}
-
-@media screen and (min-width: 760px) {
-    .price__buttons {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-    }
 }
 
 .price__button a {
@@ -486,4 +492,14 @@ body {
 .price__button a:hover {
     background-color: whitesmoke;
     color: green;
+}
+
+@media screen and (min-width: 760px) {
+    .price__buttons {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    .price__button a {
+        font-size: 24px;
+    }
 }
