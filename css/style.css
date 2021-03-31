@@ -300,6 +300,19 @@ body {
     color: white;
 }
 
+@media screen and (min-width: 760px) {
+    .article__prices {
+        background-color: #0E0E16;
+    }
+    .container__prices {
+        grid-template-rows: 60% 40%;
+        grid-template-columns: 30% 70%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+}
+
 .price__item {
     /* border: 1px solid red; */
 }
@@ -312,6 +325,14 @@ body {
     flex-direction: column;
     align-items: center;
     font-size: 16px;
+}
+
+@media screen and (min-width: 760px) {
+    .price__text {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        justify-content: space-evenly;
+    }
 }
 
 .price__text h2 {
@@ -354,6 +375,18 @@ body {
     overflow: hidden;
 }
 
+@media screen and (min-width: 760px) {
+    .price__gallery {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        margin: auto auto 0 auto;
+        width: 75%;
+        height: 80%;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
 .gallery__imgContainer {
     position: relative;
 }
@@ -363,13 +396,6 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-@media screen and (min-width: 760px) {
-    .container__prices {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
 }
 
 .triangle {
@@ -406,6 +432,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width: 760px) {
+    .price__list {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
 }
 
 .price__list p {
@@ -424,7 +458,15 @@ body {
 
 .price__buttons {
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
+}
+
+@media screen and (min-width: 760px) {
+    .price__buttons {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
 }
 
 .price__button a {
