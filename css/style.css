@@ -289,7 +289,7 @@
             background-color: #0E0E16;
         }
         .container__prices {
-            grid-template-rows: 60% 40%;
+            grid-template-rows: 70% 30%;
             grid-template-columns: 40% 60%;
             margin-left: auto;
             margin-right: auto;
@@ -451,6 +451,10 @@
         justify-content: space-evenly;
     }
     
+    .price__button {
+        margin-bottom: 50px;
+    }
+    
     .price__button a {
         display: block;
         background-color: green;
@@ -541,4 +545,22 @@
     .us__botton a:hover {
         background-color: whitesmoke;
         color: green;
+    }
+    
+    @media screen and (min-width: 760px) {
+        .us__container {
+            font-size: 20px;
+        }
+        .us__grid {
+            display: grid;
+            grid-template-rows: 50% 50%;
+            grid-template-columns: 50% 50%;
+        }
+        .us__text-button {
+            grid-row: unset;
+        }
+        .us__h2 {
+            font-size: 4em;
+            margin-bottom: 0;
+        }
     }
