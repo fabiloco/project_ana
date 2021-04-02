@@ -589,9 +589,11 @@
         border-radius: 50%;
     }
     
+    .testimonials__flex {}
+    
     .testimonial__card {
         background-color: #21242B;
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         margin: 0 auto 20px auto;
@@ -601,8 +603,30 @@
         border-radius: 8px;
     }
     
+    .testimonial__card-active {
+        display: flex;
+        animation: fade-in 0.8s 1;
+    }
+    
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    
     .testimonial__card h4 {
         margin: 5px 0 5px 0;
         color: green;
         font-size: 20px;
+    }
+    
+    .testimonial__buttons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
     }
