@@ -601,6 +601,7 @@
         padding: 20px;
         color: white;
         border-radius: 8px;
+        text-align: center;
     }
     
     .testimonial__card-active {
@@ -629,4 +630,25 @@
         display: flex;
         justify-content: center;
         margin-bottom: 10px;
+    }
+    
+    @media screen and (min-width: 760px) {
+        .testimonials__flex {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            justify-content: center;
+        }
+        .testimonial__card {
+            display: flex;
+            width: 320px;
+            margin: 0 20px 30px 20px;
+        }
+        .testimonial__buttons {
+            display: none;
+        }
+        .testimonial__card-active {
+            animation: none;
+        }
     }
